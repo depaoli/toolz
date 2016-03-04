@@ -1,0 +1,6 @@
+#
+# Dependencies/libraries for PyPI
+#
+
+# Hashing Lib containing MurmurHash3 for dup_file_find.py
+smhasher>=0.150.1
