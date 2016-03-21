@@ -15,8 +15,9 @@ from sys import platform
 def qnap_decrypt(password):
     """
     Module to decrypt (actually convert) QNAP passwords
-    (Ref. http://www.baseline-security.de/downloads/BSC-Qnap_Crypto_Backdoor-CVE-2009-3200.txt)
+    (Ref. http://www.baseline-security.de/downloads/BSC-Qnap_Crypto_Backdoor-CVE-2009-3200.txt).
     """
+    
     if platform == 'darwin':
         raise OSError(78, 'Darwin/OS X will not return proper value! Please consider using Linux!')
     

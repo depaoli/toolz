@@ -6,6 +6,10 @@
 
 
 def type7decrypt(type7_string):
+    """
+    Function to decrypt Cisco Type 7 passwords.
+    """
+    
     type0_string = ''
 
     cipher_key = ( 0x64, 0x73, 0x66, 0x64, 0x3b, 0x6b, 0x66, 0x6f, 0x41,
@@ -22,7 +26,7 @@ def type7decrypt(type7_string):
 
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     type7_string = raw_input('Enter Type7 string: ')
     type0_string = type7decrypt(type7_string)
     print 'The password is: {0}'.format(type0_string)
