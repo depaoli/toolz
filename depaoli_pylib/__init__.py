@@ -3,4 +3,4 @@
 #
 ##########################################################################################
 
-__all__ = ["type7decrypt", "dup_file_find"]
+__all__ = ['type7decrypt', 'dup_file_find', 'qnap_decrypt']
