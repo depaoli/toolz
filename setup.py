@@ -29,6 +29,8 @@ args = dict(
 
     # Find Packages automatically but don't include those in "test" (ie. unittest)
     packages = find_packages(exclude=('test',)),
+    # Define Package/s in test as Test Suite
+    test_suite = "test",
 
     # Tells distribute to look for a MANIFEST.in file
     # and wrap-up all the entries that match inside the package itself
